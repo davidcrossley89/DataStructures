@@ -1,0 +1,11 @@
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.exe
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.deps.json
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.runtimeconfig.json
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.runtimeconfig.dev.json
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.dll
+C:\Users\Student2\source\repos\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.pdb
+C:\Users\Student2\source\repos\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.AssemblyInfoInputs.cache
+C:\Users\Student2\source\repos\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.AssemblyInfo.cs
+C:\Users\Student2\source\repos\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.dll
+C:\Users\Student2\source\repos\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.pdb
+C:\Users\Student2\source\repos\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.csprojAssemblyReference.cache
