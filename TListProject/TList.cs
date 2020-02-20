@@ -23,18 +23,11 @@ public class TList
 	/// Push, pop, length, getLast, reverse, merge, print
 	public int length()  //Returns the number of nodes in the list
 	{
-		if (head == null) { return 0; }
-		else
-		{
-			TNode curNode = head;
-			int ans = 1;
-			while (curNode.getLast() == false)
-			{
-				ans += 1;
-				curNode = curNode.getNext();
-			}
-			return ans;
-		}
+		
+
+
+
+
 	}
 	public void push(string newVal) //add a single node to the front of a list.
 	{
