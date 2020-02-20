@@ -48,16 +48,7 @@ public class TList
 	}
 	public void push(string newVal) //add a single node to the front of a list.
 	{
-		if (getEmpty())
-		{
-			setHead(new TNode(newVal));
-			setEmpty(false);
-		}
-		else
-		{
-			TNode newNext = head;       //pushes all other values back in list
-			head = new TNode(newVal, newNext);
-		}
+		
 	}
 	public string pop() //return the value of the first node in list
 	{                   //removes first value from list
