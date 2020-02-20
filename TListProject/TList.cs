@@ -5,17 +5,23 @@ public class TList
 	//---------------Attributes--------------------------------------------------------
 
 	private TNode head;     //Simple List: only knows it's own first node
+	private bool isEmpty;
 
 
 	//---------------Constructors------------------------------------------------------
-	public TList() { }  //Constructs an empty list
+	public TList()
+	{   //Constructs an empty list
+		this.setEmpty(true);
+	}
 	public TList(TNode node) //Constructor, given a node
 	{
 		head = node;
+		setEmpty(false);
 	}
-		public TList(string node) //Constructor, given a string, it creates a new node
+	public TList(string node) //Constructor, given a string, it creates a new node
 	{
 		head = new TNode(node);
+		setEmpty(false);
 	}
 
 
@@ -23,33 +29,60 @@ public class TList
 	/// Push, pop, length, getLast, reverse, merge, print
 	public int length()  //Returns the number of nodes in the list
 	{
-		
-
-
-
-
+		if (getEmpty())
+		{
+			return 0;
+		}
+		if (head == null) { return 0; }
+		else
+		{
+			TNode curNode = head;
+			int ans = 1;
+			while (curNode.getLast() == false)
+			{
+				ans += 1;
+				curNode = curNode.getNext();
+			}
+			return ans;
+		}
 	}
 	public void push(string newVal) //add a single node to the front of a list.
 	{
-		TNode newNext = head;		//pushes all other values back in list
-		head = new TNode(newVal,newNext);
+		if (getEmpty())
+		{
+			setHead(new TNode(newVal));
+			setEmpty(false);
+		}
+		else
+		{
+			TNode newNext = head;       //pushes all other values back in list
+			head = new TNode(newVal, newNext);
+		}
 	}
 	public string pop() //return the value of the first node in list
-	{					//removes first value from list
-		string ans = head.getValue();
-		head = head.getNext();
-		return ans;
+	{                   //removes first value from list
+		if (getEmpty()) { return null; }
+		else
+		{
+			string ans = head.getValue();
+			head = head.getNext();
+			return ans;
+		}
 	}
 	
 	public TNode getLast()  //returns the last node in the list
 	{
-		TNode curNode = head;
-		while (curNode.getLast() == false)
+		if (getEmpty()) { return null; }
+		else
+		{
+
+			TNode curNode = head;
+			while (curNode.getLast() == false)
 			{
-			curNode.print();
 				curNode = curNode.getNext();
 			}
 			return curNode;
+		}
 		}
 	public TList reverse()  //copies the list into a new namespace in reverse order
 	{
@@ -90,4 +123,6 @@ public class TList
 	
 	public void setHead(TNode newHead) { head = newHead; }
 	public TNode getHead() { return head; }
+	public bool getEmpty() { return isEmpty;}
+	public void setEmpty(bool newEmpty) { isEmpty = newEmpty; }
 }

@@ -7,17 +7,15 @@ namespace TListProject
         static void Main(string[] args)
         {
 
-            Console.WriteLine("The program will call 'testList1.length'.");
-            TList testList1 = new TList(new TNode("D"));
-            testList1.push("C");
-            testList1.push("B");
-            testList1.push("A");
-            testList1.print();
-            if (testList1.length() == 4) { Console.WriteLine("Test 1 passed"); }
+            Console.WriteLine("The program will call creates a list, calls 'testList1.push('E')' and tests the length to ensure the list is the correct length.");
+            TList testList1 = new TList(new TNode("D", new TNode("C", new TNode("B", new TNode("A")))));
+            testList1.push("E");
+            if (testList1.length() == 5) { Console.WriteLine("Test 1 passed"); }
             else { Console.WriteLine("Test 1 failed"); }
             TList testList2 = new TList();
-            if (testList2.length() == 0) { Console.WriteLine("Test 1 passed"); }
-            else { Console.WriteLine("Test 1 failed"); }
+            testList2.push("A");
+            if (testList2.length() == 1) { Console.WriteLine("Test 2 passed"); }
+            else { Console.WriteLine("Test 2 failed"); }
 
         }
     }
