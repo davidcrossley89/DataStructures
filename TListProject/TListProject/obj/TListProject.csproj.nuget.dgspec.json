@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student2\\source\\repos\\TListProject\\TListProject\\TListProject.csproj": {}
+    "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student2\\source\\repos\\TListProject\\TListProject\\TListProject.csproj": {
+    "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student2\\source\\repos\\TListProject\\TListProject\\TListProject.csproj",
+        "projectUniqueName": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
         "projectName": "TListProject",
-        "projectPath": "C:\\Users\\Student2\\source\\repos\\TListProject\\TListProject\\TListProject.csproj",
+        "projectPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
         "packagesPath": "C:\\Users\\Student2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student2\\source\\repos\\TListProject\\TListProject\\obj\\",
+        "outputPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Student2\\AppData\\Roaming\\NuGet\\NuGet.Config",
