@@ -2,18 +2,19 @@
 
 public class TList
 {
-	public TNode head;		//Simple List: only knows it's own first node
+	public TNode head { get; set; }      //Simple List: only knows its own first node and count of nodes
+	public int count { get; set; } = 0;
 	public TList(TNode node) //Constructor, given a node
 	{
 		head = node;
+		count++;
 	}
 	public TList(string node) //Constructor, given a string, it creates a new node
 	{
-		TNode startHead = new TNode(node);
-		head = startHead;
+		new TList(new TNode(node));
 	}
 
-	public void addToFront(string nextNode) //add a single node to the front of a list.
+	public void push(string nextNode) //add a single node to the front of a list.
 	{
 		TNode secondNode = this.head;
 		
@@ -21,6 +22,17 @@ public class TList
 		head = firstNode;
 		
 		head.addNext(secondNode);
+	}
+	public string pop()  //returns the first node in the list, removes it from list
+	{
+		if (this.head == null){
+			Console.WriteLine("Empty List");
+			return "";
+		}
+		string ans;
+		ans = head.data;
+		this.remove(0);
+		return ans;	
 	}
 	public void print()		//used to display all members of the list
 	{
@@ -31,30 +43,47 @@ public class TList
 		}
 		else { Console.WriteLine("Empty List"); }
 	}
-	public void insert(int index, TNode node)
+	public void insert(int index, string addData) //insert a value at the given index
+
 	{
-		if (this.head == null) {
+		TNode node = new TNode(addData);
+		if (this.head == null||count <=index) {
 			Console.WriteLine("List does not contain the given index");
+		}
+		else if (index == 0)
+		{
+			node.addNext(this.head);
+			count++;
+			this.head = node;
 		}
 		else
 		{
-			head.insert(index, node);
+			head.insert(index-1, node);
+			count++;
 		}
 	}
 
-	public void remove(int index)
+	public void remove(int index) //removes the given index from the list
 	{
-		if (this.head == null)
+
+		if (this.head == null || count<=index)
 		{
 			Console.WriteLine("List does not contain the given index");
 		}
 		else if (index == 0) 
 		{
 			head = head.next;
+			count = count - 1;
 		}
 		else
 		{
 			head.next.remove(index - 1, head);
+			count = count - 1;
 		}
+	}
+	public void clear()
+	{
+		head = null;
+		count = 0;
 	}
 }

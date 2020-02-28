@@ -20,3 +20,14 @@ C:\Users\Student2\Source\Repos\DataStructures\TListProject\TListProject\obj\Debu
 C:\Users\Student2\Source\Repos\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.AssemblyInfo.cs
 C:\Users\Student2\Source\Repos\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.dll
 C:\Users\Student2\Source\Repos\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.pdb
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.csprojAssemblyReference.cache
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.AssemblyInfoInputs.cache
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.AssemblyInfo.cs
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.dll
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\obj\Debug\netcoreapp3.1\TListProject.pdb
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.exe
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.deps.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.runtimeconfig.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.runtimeconfig.dev.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.dll
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\TListProject\TListProject\bin\Debug\netcoreapp3.1\TListProject.pdb
