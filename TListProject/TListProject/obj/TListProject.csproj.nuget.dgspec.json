@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\TListProject\\TListProject\\TListProject.csproj": {}
+    "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\TListProject\\TListProject\\TListProject.csproj": {
+    "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
+        "projectUniqueName": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj",
         "projectName": "TListProject",
-        "projectPath": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
+        "projectPath": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj",
         "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\TListProject\\TListProject\\obj\\",
+        "outputPath": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",

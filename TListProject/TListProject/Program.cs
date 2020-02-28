@@ -11,12 +11,15 @@ namespace TListProject
             testList.push("C");
             testList.push("B");
             testList.push("A");
-            testList.insert(1, "E");
-            testList.print();
-            testList.remove(3);
+            Console.WriteLine("Base List: ");
             testList.print();
             Console.WriteLine();
-            Console.WriteLine(testList.pop());
+            testList.insert(1, "E");
+            Console.WriteLine("Insert E at index 1:");
+            testList.print();
+            Console.WriteLine();
+            testList.remove(3);
+            Console.WriteLine("Remove index 3");
             testList.print();
         }
     }

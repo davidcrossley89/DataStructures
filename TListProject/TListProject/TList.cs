@@ -19,9 +19,9 @@ public class TList
 		TNode secondNode = this.head;
 		
 		TNode firstNode = new TNode(nextNode);
-		head = firstNode;
-		
+		head = firstNode;		
 		head.addNext(secondNode);
+		count++;
 	}
 	public string pop()  //returns the first node in the list, removes it from list
 	{
@@ -38,7 +38,6 @@ public class TList
 	{
 		if (head != null)
 		{
-			Console.WriteLine();
 			head.printAll();
 		}
 		else { Console.WriteLine("Empty List"); }
