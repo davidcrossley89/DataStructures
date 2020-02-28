@@ -2,33 +2,59 @@
 
 public class TList
 {
-	TNode head;		//Simple List: only knows it's own first node
+	public TNode head;		//Simple List: only knows it's own first node
 	public TList(TNode node) //Constructor, given a node
 	{
-		TNode head = node;
+		head = node;
 	}
 	public TList(string node) //Constructor, given a string, it creates a new node
 	{
-		TNode head = new TNode(node);
+		TNode startHead = new TNode(node);
+		head = startHead;
 	}
 
-
-
-	public void addToFront(string newVal) //add a single node to the front of a list.
+	public void addToFront(string nextNode) //add a single node to the front of a list.
 	{
-		TNode newNext = this.head;		//shifts all other values back in list
-		this.head = new TNode(newVal);
-		this.head.setNext(newNext);
-		this.head.setLast(false);
+		TNode secondNode = this.head;
+		
+		TNode firstNode = new TNode(nextNode);
+		head = firstNode;
+		
+		head.addNext(secondNode);
 	}
-	public void TPrint()		//used to display all members of the list
+	public void print()		//used to display all members of the list
 	{
-		TNode curNode = this.head;
-		while (curNode.getLast() == false){
-			curNode.print();
-			curNode = curNode.getNext();
+		if (head != null)
+		{
+			Console.WriteLine();
+			head.printAll();
+		}
+		else { Console.WriteLine("Empty List"); }
+	}
+	public void insert(int index, TNode node)
+	{
+		if (this.head == null) {
+			Console.WriteLine("List does not contain the given index");
+		}
+		else
+		{
+			head.insert(index, node);
 		}
 	}
 
-
+	public void remove(int index)
+	{
+		if (this.head == null)
+		{
+			Console.WriteLine("List does not contain the given index");
+		}
+		else if (index == 0) 
+		{
+			head = head.next;
+		}
+		else
+		{
+			head.next.remove(index - 1, head);
+		}
+	}
 }
