@@ -1,0 +1,11 @@
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.exe
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.deps.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.runtimeconfig.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.runtimeconfig.dev.json
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.dll
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.pdb
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.csprojAssemblyReference.cache
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfoInputs.cache
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfo.cs
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.dll
+C:\Users\Dave\Source\Repos\davidcrossley89\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.pdb

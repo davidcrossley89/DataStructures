@@ -15,10 +15,40 @@ namespace BinaryTree
 
         public void printTree()
         {
-            if (this.isNull()) { Console.WriteLine("null"); }
-            else  Console.WriteLine(top.print());
+            string treeOutput;
+            if (this.isNull()) { treeOutput = "null"; }
+            else  treeOutput =top.print();
+            Console.WriteLine(treeOutput);
+            int h = this.getHeight();
+            List<char>[] outArray = new List<char>[h];
+            foreach(List<char> level in outArray) { new List<char>(); }
+            int currentLevel = 0;
+            int spacesBetween = this.getHeight() *this.getHeight();
+            foreach (char character in treeOutput)
+            {
+                if (character == '[') { currentLevel++;}
+                else if (character == ']') { currentLevel = currentLevel - 1; }
+                else if (outArray[currentLevel] == null) { outArray[currentLevel] = new List<char> {' '}; outArray[currentLevel].Add(character); }
+                else { outArray[currentLevel].Add(character); }
+            }
+            foreach (List<char> level in outArray)
+            {
+                Console.WriteLine();
+
+                foreach (char character in level)
+                {
+                    Console.Write(character);
+                    for (int space = 0; space <= spacesBetween; space++)
+                    {
+                        Console.Write(' ');
+                    }
+                }
+                spacesBetween = spacesBetween - this.getHeight();
+            }
 
         }
+
+       
         public int getHeight()
         {
             if (this.isNull()) { return 0; }

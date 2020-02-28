@@ -20,7 +20,7 @@ namespace BinaryTree
 
         public string print()
         {
-            string ans = data+":";
+            string ans = data;
             string leftAns;
             string rightAns;
             
@@ -29,7 +29,7 @@ namespace BinaryTree
 
             if (isRightNull()) rightAns = "";
             else rightAns = right.print();
-            ans = ans +"[" + leftAns + ","+rightAns +"]" ;
+            ans = ans +"[" + leftAns  +rightAns +"]" ;
             return ans;
 
         }
