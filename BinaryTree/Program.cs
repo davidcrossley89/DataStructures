@@ -19,10 +19,8 @@ namespace BinaryTree
             TreeNode a = new TreeNode("A");
             TreeNode b = new TreeNode("B");
             TreeNode c = new TreeNode("C");
-            Tree tree = new Tree(one);
-
+           
             Tree empTree = new Tree();
-            Console.WriteLine(tree.isFull());
             Console.WriteLine(empTree.isFull());
 
             empTree.Add(one);
@@ -37,6 +35,11 @@ namespace BinaryTree
             empTree.Add(c);
 
             empTree.printTree();
+            Console.WriteLine();
+            Tree twoTree = empTree.merge(two, three);
+            twoTree.printTree();
+
+
 
         }
     }

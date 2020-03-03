@@ -80,7 +80,7 @@ public class TList
 			count = count - 1;
 		}
 	}
-	public void clear()
+	public void clear()//removes all nodes from the list
 	{
 		head = null;
 		count = 0;

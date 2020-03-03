@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\BinaryTree\\BinaryTree.csproj": {}
+    "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\BinaryTree\\BinaryTree.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\BinaryTree\\BinaryTree.csproj": {
+    "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\BinaryTree\\BinaryTree.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\BinaryTree\\BinaryTree.csproj",
+        "projectUniqueName": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\BinaryTree\\BinaryTree.csproj",
         "projectName": "BinaryTree",
-        "projectPath": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\BinaryTree\\BinaryTree.csproj",
-        "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dave\\Source\\Repos\\davidcrossley89\\DataStructures\\BinaryTree\\obj\\",
+        "projectPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\BinaryTree\\BinaryTree.csproj",
+        "packagesPath": "C:\\Users\\Student2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\BinaryTree\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

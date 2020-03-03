@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Dave\\.nuget\\packages\\": {}
+    "C:\\Users\\Student2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj",
+      "projectUniqueName": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
       "projectName": "TListProject",
-      "projectPath": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\TListProject.csproj",
-      "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dave\\Source\\Repos\\DataStructures2\\TListProject\\TListProject\\obj\\",
+      "projectPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\TListProject.csproj",
+      "packagesPath": "C:\\Users\\Student2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Student2\\Source\\Repos\\DataStructures\\TListProject\\TListProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

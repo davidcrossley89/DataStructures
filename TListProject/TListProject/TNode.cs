@@ -17,10 +17,6 @@ public class TNode
 		Console.Write(this.data);
 		if ( !this.isLast) { next.printAll(); }
 	}
-	public void print() //prints only this node
-	{
-		Console.Write(this.data);
-	}
 	public void addNext(TNode node) //Adds a node next in the list
 	{
 		this.next = node;
