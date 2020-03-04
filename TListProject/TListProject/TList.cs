@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class TList
+class TList
 {
-	public TNode head { get; set; }      //Simple List: only knows its own first node and count of nodes
+	public TNode? head { get; set; }      //Simple List: only knows its own first node and count of nodes
 	public int count { get; set; } = 0;
 	public TList(TNode node) //Constructor, given a node
 	{
@@ -17,7 +17,6 @@ public class TList
 	public void push(string nextNode) //add a single node to the front of a list.
 	{
 		TNode secondNode = this.head;
-		
 		TNode firstNode = new TNode(nextNode);
 		head = firstNode;		
 		head.addNext(secondNode);
@@ -46,7 +45,7 @@ public class TList
 
 	{
 		TNode node = new TNode(addData);
-		if (this.head == null||count <=index) {
+		if (this.head == null||count <index || index < 0) {
 			Console.WriteLine("List does not contain the given index");
 		}
 		else if (index == 0)
@@ -64,8 +63,7 @@ public class TList
 
 	public void remove(int index) //removes the given index from the list
 	{
-
-		if (this.head == null || count<=index)
+		if (this.head == null || count<index||index <0)
 		{
 			Console.WriteLine("List does not contain the given index");
 		}
@@ -76,7 +74,7 @@ public class TList
 		}
 		else
 		{
-			head.next.remove(index - 1, head);
+			head.remove(index);
 			count = count - 1;
 		}
 	}
@@ -84,5 +82,30 @@ public class TList
 	{
 		head = null;
 		count = 0;
+	}
+	public bool isLooped() // detects a loop in the list
+	{
+		bool looped = false;
+		TNode runner1 = this.head;
+		TNode runner2 = this.head;
+		while (runner1 != null && runner2 != null)
+		{
+			runner1 = runner1.next;
+			
+			if (runner2.next != null)
+			{
+				runner2 = runner2.next;
+			}
+			if (runner2.next != null)
+			{
+				runner2 = runner2.next;
+			}
+			if (runner1 == runner2)
+			{
+				looped = true;
+				break;
+			}
+		}
+		return looped;
 	}
 }

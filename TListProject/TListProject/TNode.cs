@@ -1,52 +1,54 @@
 ﻿using System;
 
-public class TNode
+internal class TNode
 {
-	public string data { get; set; }
-	public  TNode next { get; set; }
-	public bool isLast { get; set; } = true;
-
+	internal string data { get; set; }
+	internal TNode? next { get; set; }
 	public TNode(string startingData)	{this.data = startingData;}
-	public TNode(string startingData, TNode node)
+	internal TNode(string startingData, TNode node)
 	{
 		this.data = startingData;
-		this.next = node;
+		this.addNext(node);
 	}
-	public void printAll() //prints all following nodes
+	internal void printAll() //prints all following nodes
 	{
 		Console.Write(this.data);
-		if ( !this.isLast) { next.printAll(); }
+		if (this.next != null) { next.printAll(); }
+		else { Console.WriteLine(); }
 	}
-	public void print() //prints only this node
+	internal void print() //prints only this node, currently not used
 	{
 		Console.Write(this.data);
 	}
-	public void addNext(TNode node) //Adds a node next in the list
+	internal void addNext(TNode node) //Adds a node next in the list
 	{
 		this.next = node;
-		this.isLast = false;
 	}
-	public void insert(int index,TNode node) //used recursively to insert a value into a specified index
+	internal void insert(int index,TNode node) //used recursively to insert a value into a specified index
 	{
 		if (index == 0)
 		{
-			node.addNext(this.next);
-			this.addNext(node);
+			if (this.next == null){this.addNext(node);}
+			else
+			{
+				node.addNext(this.next);
+				this.addNext(node);
+			}
 		}
 		else
 		{
 			next.insert(index - 1, node);
 		}
 	}
-	public void remove(int index, TNode previous) //used recursively to remove a node at a specified index
+	internal void remove(int index) //used recursively to remove a node at a specified index
 	{
-		if (index == 0)
+		if (index == 1)
 		{
-			previous.next = this.next;
+			this.next = this.next.next;
 		}
 		else
 		{
-			this.next.remove(index - 1, this);
+			this.next.remove(index - 1);
 		}
 	}
 }
