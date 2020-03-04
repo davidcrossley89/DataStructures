@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -18,7 +19,7 @@ namespace BinaryTree
             string treeOutput;
             if (this.isNull()) { treeOutput = "null"; }
             else  treeOutput =top.print();
-            Console.WriteLine(treeOutput);
+            //Console.WriteLine(treeOutput);
             int h = this.getHeight();
             List<char>[] outArray = new List<char>[h];
             foreach(List<char> level in outArray) { new List<char>(); }
@@ -74,9 +75,10 @@ namespace BinaryTree
         public Tree merge(TreeNode leftTree, TreeNode rightTree)
         {
             Tree answerTree = new Tree();
-            string allNodes = "";
-            allNodes = allNodes + leftTree.getAllNodes() + rightTree.getAllNodes();
-            foreach (char character in allNodes){ answerTree.Add(new TreeNode(character.ToString())); }
+            ArrayList allNodes = new ArrayList();
+            allNodes.AddRange(leftTree.getAllNodes());
+            allNodes.AddRange(rightTree.getAllNodes());
+            foreach (int number in allNodes){ Console.Write(number); answerTree.Add(new TreeNode(number)); }
             return answerTree;
         }
     }

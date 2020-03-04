@@ -13,6 +13,10 @@ class TList
 	{
 		new TList(new TNode(node));
 	}
+	public TList()
+	{
+		head = null;
+	}
 
 	public void push(string nextNode) //add a single node to the front of a list.
 	{

@@ -7,37 +7,17 @@ namespace BinaryTree
         static void Main(string[] args)
         {
 
-            TreeNode four = new TreeNode("4");
-            TreeNode five = new TreeNode("5");
-            TreeNode six = new TreeNode("6");
-            TreeNode seven = new TreeNode("7");
-            
-            TreeNode two = new TreeNode("2");
-            TreeNode three = new TreeNode("3");
-
-            TreeNode one = new TreeNode("1");
-            TreeNode a = new TreeNode("A");
-            TreeNode b = new TreeNode("B");
-            TreeNode c = new TreeNode("C");
-           
+            int[] searchTest = new int[] { 5, 4, 8, 2, 3, 7, 5, 1 };
             Tree empTree = new Tree();
+            //for (int num =0; num <=9; num++) { empTree.Add(new TreeNode(num)); }
+            foreach (int num in searchTest) { empTree.Add(new BinarySearchNode(num)); }
             Console.WriteLine(empTree.isFull());
 
-            empTree.Add(one);
-            empTree.Add(two);
-            empTree.Add(three);
-            empTree.Add(four);
-            empTree.Add(five);
-            empTree.Add(six);
-            empTree.Add(seven);
-            empTree.Add(a);
-            empTree.Add(b);
-            empTree.Add(c);
 
             empTree.printTree();
             Console.WriteLine();
-            Tree twoTree = empTree.merge(two, three);
-            twoTree.printTree();
+            //Tree twoTree = empTree.merge(empTree.top.left, empTree.top.right);
+            //twoTree.printTree();
 
 
 

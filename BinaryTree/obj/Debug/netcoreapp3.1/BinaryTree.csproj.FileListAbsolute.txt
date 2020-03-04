@@ -20,3 +20,14 @@ C:\Users\Student2\Source\Repos\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1
 C:\Users\Student2\Source\Repos\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfo.cs
 C:\Users\Student2\Source\Repos\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.dll
 C:\Users\Student2\Source\Repos\DataStructures\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.pdb
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.exe
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.deps.json
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.runtimeconfig.json
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.runtimeconfig.dev.json
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.dll
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.pdb
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.csprojAssemblyReference.cache
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfoInputs.cache
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfo.cs
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.dll
+C:\Users\Dave\Source\Repos\DataStructures2\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.pdb

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,21 +7,21 @@ namespace BinaryTree
 {
      class TreeNode
     {
-        private string data { get; set; } = null;
-        private TreeNode left { get; set; } = null;
-        private TreeNode right { get; set; } = null;
+        internal int? data { get; set; } = null;
+        internal TreeNode left { get; set; } = null;
+        internal TreeNode right { get; set; } = null;
 
         public TreeNode() {}
-        public TreeNode(string number) { data = number; }
-        public TreeNode(string number, TreeNode newLeft) { data = number; left = newLeft; }
-        public TreeNode(string number, TreeNode newLeft, TreeNode newRight) { data = number; left = newLeft; right = newRight; }
+        public TreeNode(int number) { data = number; }
+        public TreeNode(int number, TreeNode newLeft) { data = number; left = newLeft; }
+        public TreeNode(int number, TreeNode newLeft, TreeNode newRight) { data = number; left = newLeft; right = newRight; }
 
         public bool isLeftNull() { return (this.left == null); }
         public bool isRightNull() { return (this.right == null); }
 
         public string print()
         {
-            string ans = data;
+            string ans = data.ToString();
             string leftAns;
             string rightAns;
             
@@ -64,7 +65,7 @@ namespace BinaryTree
             else if (isRightNull()) { return false; }
             else return (left.isFull() && right.isFull());
         }
-        public void Add(TreeNode node)
+        virtual public void Add(TreeNode node)
         {
 
             if (isLeftNull()) { left = node; }
@@ -77,11 +78,12 @@ namespace BinaryTree
             if (data == rData) { this.adjust}
         }
         */
-        public string getAllNodes()
+        public ArrayList getAllNodes()
         {
-            string answer = data;
-            if (!isLeftNull()) { answer = answer + left.getAllNodes(); }
-            if (!isRightNull()) { answer = answer + right.getAllNodes(); }
+            ArrayList answer = new ArrayList();
+            answer.Add(data);
+            if (!isLeftNull()) { answer.AddRange(left.getAllNodes()); }
+            if (!isRightNull()) { answer.AddRange(right.getAllNodes()); }
             return answer;
         }
     }
