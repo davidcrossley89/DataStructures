@@ -72,5 +72,17 @@ namespace BinaryTree
             else if (left.getFullHeight(0) > right.getFullHeight(0)) { right.Add(node); }
             else left.Add(node);
         }
+        /*public void Remove(string rData)
+        {
+            if (data == rData) { this.adjust}
+        }
+        */
+        public string getAllNodes()
+        {
+            string answer = data;
+            if (!isLeftNull()) { answer = answer + left.getAllNodes(); }
+            if (!isRightNull()) { answer = answer + right.getAllNodes(); }
+            return answer;
+        }
     }
 }

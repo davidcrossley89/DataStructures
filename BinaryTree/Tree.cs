@@ -23,7 +23,7 @@ namespace BinaryTree
             List<char>[] outArray = new List<char>[h];
             foreach(List<char> level in outArray) { new List<char>(); }
             int currentLevel = 0;
-            int spacesBetween = this.getHeight() *this.getHeight();
+            
             foreach (char character in treeOutput)
             {
                 if (character == '[') { currentLevel++;}
@@ -31,6 +31,7 @@ namespace BinaryTree
                 else if (outArray[currentLevel] == null) { outArray[currentLevel] = new List<char> {' '}; outArray[currentLevel].Add(character); }
                 else { outArray[currentLevel].Add(character); }
             }
+            int spacesBetween = 2 ^ getHeight();
             foreach (List<char> level in outArray)
             {
                 Console.WriteLine();
@@ -43,7 +44,7 @@ namespace BinaryTree
                         Console.Write(' ');
                     }
                 }
-                spacesBetween = spacesBetween - this.getHeight();
+                spacesBetween = spacesBetween / 2 ;
             }
 
         }
@@ -63,6 +64,20 @@ namespace BinaryTree
         {
             if (this.isNull()) { this.top = node; }
             else top.Add(node);
+        }
+        /*
+        public void Remove(string node)
+        {
+            if (this.isNull()) { Console.WriteLine("Empty List, no nodes to remove"); }
+            else { top.Remove(node); }
+        }*/
+        public Tree merge(TreeNode leftTree, TreeNode rightTree)
+        {
+            Tree answerTree = new Tree();
+            string allNodes = "";
+            allNodes = allNodes + leftTree.getAllNodes() + rightTree.getAllNodes();
+            foreach (char character in allNodes){ answerTree.Add(new TreeNode(character.ToString())); }
+            return answerTree;
         }
     }
 }
